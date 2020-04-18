@@ -6,6 +6,7 @@ import {
 import './App.scss';
 
 import Hello from './components/Hello/Hello';
+import Review from './components/Review/Review';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -17,6 +18,7 @@ class App extends React.Component {
                     <Header />
 
                     <Route exact path='/' component={Hello} />
+                    <Route exact path='/review' component={Review} />
 
                     <Footer />
                 </div>

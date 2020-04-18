@@ -8,9 +8,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: $globalContainerSpacing;
+        padding: 0 $globalContainerSpacingLarge;
         font-family: $fontFamilyHeader;
-        color: $paleViolet;
         box-sizing: border-box;
         box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.5);
     }
@@ -18,6 +17,7 @@
     &__logo {
         font-size: $fontSizeHeader;
         position: relative;
+        color: $paleViolet;
 
         &::before {
             content: '';
@@ -37,5 +37,21 @@
     &__link {
         margin-left: $spacingXLarge;
         color: $paleViolet;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .header {
+        &__container {
+            padding: 0 $globalContainerSpacingMedium;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .header {
+        &__container {
+            padding: 0 $globalContainerSpacingSmall;
+        }
     }
 }

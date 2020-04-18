@@ -6,7 +6,9 @@ export default class Header extends React.Component {
     render() {
         return (
             <div className='header__container'>
-                <p className='header__logo'>GAMECHANGER</p>
+                <Link to='/' className='header__logo'>
+                    GAMECHANGER
+                </Link>
                 <ul className='header__nav'>
                     <li>
                         <Link className='header__link' to='/'>
@@ -14,7 +16,7 @@ export default class Header extends React.Component {
                         </Link>
                     </li>
                     <li>
-                        <Link className='header__link' to='/'>
+                        <Link className='header__link' to='/review'>
                             RECENZJE
                         </Link>
                     </li>

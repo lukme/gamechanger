@@ -4,20 +4,22 @@ $white: #fff;
 $black: #000;
 
 // ---------- FONT SIZES ---------- //
-$fontSizeHeader: 35px;
-$fontSizeNav: 23px;
-$fontSizeFooter: 19px;
+$fontSizeHeader: 2rem;
+$fontSizeNav: 1.4rem;
+$fontSizeFooter: 1.2rem;
 
 // ---------- FONT FAMILIES ---------- //
 $fontFamilyHeader: 'Staatliches', Arial, Helvetica, sans-serif;
 
 // ---------- SPACING ---------- //
+$globalContainerSpacingLarge: 25vw;
+$globalContainerSpacingMedium: 15vw;
+$globalContainerSpacingSmall: 10vw;
 $spacingHorizontalSmall: 0 10px;
 $spacingSmall: 10px;
 $spacingMedium: 50px;
 $spacingLarge: 100px;
 $spacingXLarge: 150px;
-$globalContainerSpacing: 0 24vw;
 
 // ---------- SIZES ---------- //
 $headerHeight: 140px;
