@@ -7,7 +7,12 @@ export default class Hello extends React.Component {
         return (
             <div className="hello__container">
                 <div className="hello__wrapper">
-                    <HeadingHomeArticle gameTitle='bloodborne'/>
+                    <HeadingHomeArticle
+                        title='Danse macabre'
+                        subtitle='Rzecz o umieraniu'
+                        gameTitle='bloodborne'
+                        intro='Credibly fashion leading-edge outsourcing through viral platforms. Conveniently simplify standards compliant benefits with bleeding-edge benefits.'
+                    />
                 </div>
             </div>
         )
