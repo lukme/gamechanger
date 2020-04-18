@@ -9,7 +9,9 @@ export default class Header extends React.Component {
                 <p className='header__logo'>GAMECHANGER</p>
                 <ul className='header__nav'>
                     <li>
-                        ARTYKUŁY
+                        <Link className='header__link' to='/'>
+                            ARTYKUŁY
+                        </Link>
                     </li>
                     <li>
                         <Link className='header__link' to='/'>

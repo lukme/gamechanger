@@ -3,7 +3,7 @@
 .footer {
     &__container {
         width: 100%;
-        height: 70px;
+        height: $footerHeight;
         background-color: #3D3D3D;
         display: flex;
         justify-content: space-between;
@@ -13,6 +13,8 @@
         font-size: $fontSizeFooter;
         color: $paleViolet;
         box-sizing: border-box;
+        position: fixed;
+        bottom: 0;
     }
 
     &__span {

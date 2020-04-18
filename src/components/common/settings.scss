@@ -1,6 +1,5 @@
 // ---------- COLORS ---------- //
 $paleViolet: #C293FF;
-
 $white: #fff;
 $black: #000;
 
@@ -19,3 +18,8 @@ $spacingMedium: 50px;
 $spacingLarge: 100px;
 $spacingXLarge: 150px;
 $globalContainerSpacing: 0 24vw;
+
+// ---------- SIZES ---------- //
+$headerHeight: 140px;
+$footerHeight: 70px;
+$alwaysVisibleHeight: $headerHeight + $footerHeight;
