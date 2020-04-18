@@ -12,7 +12,7 @@ export default class HomeArticle extends React.Component<Props, {}> {
     render() {
         const { type, gameTitle, description } = this.props,
             // articleImage = `/${gameTitle.replace(/\s+/g, '')}.jpg`;
-            articleImage = `https://ocdn.eu/pulscms-transforms/1/l4vk9kuTURBXy82Yzk4NjhkMi00NTY5LTRkMWYtYTIyMC0zZmRjOWFhZDRhMWQuanBlZ5GTBc0DFM0BvIGhMAU`;
+            articleImage = `https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`;
         return (
             <div className='home-article__container'>
                 <div className="home-article__decorator"

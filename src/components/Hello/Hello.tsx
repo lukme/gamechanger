@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hello.style.scss';
-import HeadingHomeArticle from '../HeadingHomeArticle/HeadingHomeArticle';
+import { HeadingHomeArticle } from '../HeadingHomeArticle/HeadingHomeArticle';
 import HomeArticle from '../HomeArticle/HomeArticle'
 
 export const Hello = () => {
