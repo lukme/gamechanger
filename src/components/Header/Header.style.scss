@@ -1,0 +1,40 @@
+@import '../common/settings.scss';
+
+.header {
+    &__container {
+        width: 100%;
+        height: 140px;
+        background-color: #3D3D3D;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $globalContainerSpacing;
+        font-family: 'Staatliches', cursive;
+        color: $paleViolet;
+        box-sizing: border-box;
+    }
+
+    &__logo {
+        font-size: $fontSizeHeader;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            width: 220px;
+            height: 4px;
+            background-color: $paleViolet;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        font-size: $fontSizeNav;
+    }
+
+    &__link {
+        margin-left: $spacingXLarge;
+        color: $paleViolet;
+    }
+}
