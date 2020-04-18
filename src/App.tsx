@@ -1,30 +1,28 @@
 import React from 'react';
-import { 
+import {
     BrowserRouter as Router,
     Route
 } from 'react-router-dom';
 import './App.scss';
 
-import Hello from './components/Hello/Hello';
-import Review from './components/Review/Review';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import { Hello } from './components/Hello/Hello';
+import { Article } from './components/Article/Article';
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
 
-class App extends React.Component {
-    render() {
-        return (
-            <Router >
-                <div className="app__container">
-                    <Header />
+export const App = () => {
+    return (
+        <Router >
+            <div className="app__container">
+                <Header />
 
-                    <Route exact path='/' component={Hello} />
-                    <Route exact path='/review' component={Review} />
+                <Route exact path='/' component={Hello} />
+                <Route exact path='/article/:title' component={Article} />
 
-                    <Footer />
-                </div>
-            </Router>
-        );
-    }
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
 export default App;

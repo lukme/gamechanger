@@ -11,12 +11,26 @@
 
     &__wrapper {
         background-color: rgba($white, .8);
-        width: 100%;
-        min-height: calc(100vh - #{$alwaysVisibleHeight});
-        padding: 5% 0;
+        min-height: calc(100vh - #{$headerHeight + $footerHeight});
+        padding: 5% 70px 10%;
         box-sizing: border-box;
-        display: flex;
-        justify-content: center;
+    }
+
+    &__others {
+        font-size: $fontSizeMedium;
+        margin: $spacingRegular 0 $spacingRegular;
+        position: relative;
+        font-family: $fontFamilyHeader;
+        font-weight: 300;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            width: 140px;
+            height: 4px;
+            background-color: rgba($olive, .2);
+        }
     }
 }
 

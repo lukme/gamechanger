@@ -1,0 +1,56 @@
+@import '../common/settings.scss';
+
+.home-article {
+    &__container {
+        width: 100%;
+        height: 160px;
+        display: flex;
+        position: relative;
+    }
+
+    &__decorator {
+        height: 100%;
+        width: 12px;
+    }
+    
+    &__image {
+        height: 100%;
+        width: auto;
+        margin: 0 $spacingSmall;
+        background-position: center;
+        background-clip: content-box;
+        background-size: cover;
+    }
+
+    &__textbox {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        padding: $spacingXSmall 0;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.1rem;
+        margin-right: $spacingSmall
+    }
+
+    &__title {
+        font-family: $fontFamilyHeader;
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    &__type {
+        display: flex;
+        height: 32px;
+        width: 200px;
+        transform: translateY(70px);
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        border-width: 2px;
+        border-style: solid;
+        font-size: .9rem;
+    }
+}

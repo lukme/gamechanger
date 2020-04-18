@@ -1,7 +1,9 @@
 // ---------- COLORS ---------- //
-$paleViolet: #C293FF;
+$violet: #C293FF;
+$sunriseOrange: #FFCA7B;
 $white: #fff;
 $black: #000;
+$olive: #3A3A3A;
 
 // ---------- FONT SIZES ---------- //
 $fontSizeHeader: 2rem;
@@ -10,22 +12,25 @@ $fontSizeFooter: 1.2rem;
 $fontSizeGameTitle: 1.2rem;
 $fontSizeTitle: 2.2rem;
 $fontSizeSubtitle: 1.4rem;
-$fontSizeMain: 1.1rem;
+$fontSizeMedium: 1.7rem;
+$fontSizeRegular: 1rem;
 
 // ---------- FONT FAMILIES ---------- //
 $fontFamilyHeader: 'Staatliches', Arial, Helvetica, sans-serif;
 
 // ---------- SPACING ---------- //
 $globalContainerSpacingLarge: 25vw;
-$globalContainerSpacingMedium: 15vw;
-$globalContainerSpacingSmall: 10vw;
+$globalContainerSpacingMedium: 19vw;
+$globalContainerSpacingSmall: 15vw;
 $spacingHorizontalSmall: 0 10px;
-$spacingSmall: 10px;
-$spacingMedium: 50px;
-$spacingLarge: 100px;
 $spacingXLarge: 150px;
+$spacingLarge: 100px;
+$spacingMedium: 70px;
+$spacingRegular: 50px;
+$spacingSmall: 20px;
+$spacingXSmall: 10px;
 
 // ---------- SIZES ---------- //
 $headerHeight: 140px;
+$headerHeightMedium: 100px;
 $footerHeight: 70px;
-$alwaysVisibleHeight: $headerHeight + $footerHeight;

@@ -17,7 +17,7 @@
     &__logo {
         font-size: $fontSizeHeader;
         position: relative;
-        color: $paleViolet;
+        color: $violet;
 
         &::before {
             content: '';
@@ -25,7 +25,7 @@
             bottom: -5px;
             width: 220px;
             height: 4px;
-            background-color: $paleViolet;
+            background-color: $violet;
         }
     }
 
@@ -36,7 +36,7 @@
 
     &__link {
         margin-left: $spacingXLarge;
-        color: $paleViolet;
+        color: $violet;
     }
 }
 
@@ -44,6 +44,7 @@
     .header {
         &__container {
             padding: 0 $globalContainerSpacingMedium;
+            height: $headerHeightMedium;
         }
     }
 }

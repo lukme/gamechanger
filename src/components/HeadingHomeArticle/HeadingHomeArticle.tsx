@@ -18,8 +18,10 @@ export default class HeadingHomeArticle extends React.Component<Props, {}> {
         return (
             <div
                 className='headArticle__container'
-                style={{ backgroundImage: `url(${bgImage})` }}
             >
+                <div className="headArticle__bgImageContainer"
+                    style={{ backgroundImage: `url(${bgImage})` }}
+                />
                 <div className="headArticle__textbox">
                     <p className='headArticle__gameTitle'>
                         {gameTitle.toUpperCase()}
