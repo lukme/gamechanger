@@ -13,7 +13,7 @@
         position: relative;
         overflow: hidden;
         &:hover .head-article__bgImageContainer {
-            transform: scale(1.06);
+            transform: scale(1.08);
         }
     }
     
@@ -25,7 +25,7 @@
         background-position: center;
         background-clip: content-box;
         background-size: cover;
-        transition: all 350ms ease-in-out;
+        transition: all 450ms ease-in-out;
     }
 
     &__textbox {
@@ -78,7 +78,7 @@
         top: -10px;
     }
 
-    &__intro {
+    &__description {
         font-size: $fontSizeRegular;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;

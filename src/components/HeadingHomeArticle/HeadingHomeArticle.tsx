@@ -6,12 +6,12 @@ interface Props {
     gameTitle: string;
     title: string;
     subtitle: string;
-    intro: string;
+    description: string;
 }
 
 export const HeadingHomeArticle = (props: Props) => {
 
-    const { gameTitle, title, subtitle, intro } = props,
+    const { gameTitle, title, subtitle, description } = props,
         // bgImage = `/${gameTitle}.jpg`;
         bgImage = `https://cdn.pixabay.com/photo/2017/10/13/14/15/fantasy-2847724_1280.jpg`;
 
@@ -32,8 +32,8 @@ export const HeadingHomeArticle = (props: Props) => {
                 <p className='head-article__subtitle'>
                     {subtitle}
                 </p>
-                <p className='head-article__intro'>
-                    {intro}
+                <p className='head-article__description'>
+                    {description}
                 </p>
                     <Link className='head-article__read-more' to={`/article/${gameTitle}`}>
                         Czytaj dalej...

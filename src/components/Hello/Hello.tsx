@@ -8,10 +8,10 @@ export const Hello = () => {
         <div className="hello__container">
             <div className="hello__wrapper">
                 <HeadingHomeArticle
+                    gameTitle='Bloodborne'
                     title='Danse macabre'
                     subtitle='Rzecz o umieraniu'
-                    gameTitle='bloodborne'
-                    intro='Credibly fashion leading-edge outsourcing through viral platforms. Conveniently simplify standards compliant benefits with bleeding-edge benefits.'
+                    description='Credibly fashion leading-edge outsourcing through viral platforms. Conveniently simplify standards compliant benefits with bleeding-edge benefits.'
                 />
                 <h3 className='hello__others text'>POZOSTAŁE</h3>
                 <HomeArticle
