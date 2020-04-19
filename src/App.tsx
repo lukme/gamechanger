@@ -1,7 +1,8 @@
 import React from 'react';
 import {
     BrowserRouter as Router,
-    Route
+    Route,
+    HashRouter
 } from 'react-router-dom';
 import './App.scss';
 
@@ -12,7 +13,7 @@ import { Footer } from './components/Footer/Footer';
 
 export const App = () => {
     return (
-        <Router >
+        <HashRouter >
             <div className="app__container">
                 <Header />
 
@@ -21,7 +22,7 @@ export const App = () => {
 
                 <Footer />
             </div>
-        </Router>
+        </HashRouter>
     );
 }
 
