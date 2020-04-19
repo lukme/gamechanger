@@ -24,7 +24,7 @@ export default class HomeArticle extends React.Component<Props, {}> {
                 />
                 <img
                     src={articleImage}
-                    alt="article image"
+                    alt="article"
                     className='home-article__image'
                 />
                 <div className="home-article__textbox">

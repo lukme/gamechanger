@@ -13,8 +13,23 @@
         background-color: rgba($white, .8);
         width: 100%;
         min-height: calc(100vh - #{$headerHeight + $footerHeight});
-        padding: 5% 70px 10%;
+        padding: 5% 0 10%;
         box-sizing: border-box;
+    }
+}
+
+.post {
+    &__content {
+        width: 55%;
+        line-height: 2rem;
+        margin: 0 auto;
+        font-size: $fontSizeFooter;
+        font-family: $fontFamilyMain;
+
+        h2 {
+            font-weight: 800;
+            margin-top: 50px;
+        }
     }
 }
 
@@ -30,6 +45,15 @@
     .article {
         &__container {
             padding: 0 calc(#{$globalContainerSpacingSmall} - 70px);
+        }
+    }
+    
+    .post {
+        &__content {
+            width: 60%;
+            margin: 0 auto;
+            font-size: $fontSizeFooter;
+            font-family: $fontFamilyMain;
         }
     }
 }

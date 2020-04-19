@@ -11,7 +11,7 @@ export const Card = (props: Props) => {
         <div className="card__container">
             <img
                 src="/ikeamaster.jpg"
-                alt="authors-photo"
+                alt="author"
                 className='card__authors-photo'
             />
             <div className='card__textbox'>
