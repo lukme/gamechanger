@@ -2,9 +2,11 @@
 
 .hello {
     &__container {
-        padding: 0 calc(#{$globalContainerSpacingLarge} - 70px);
+        padding: $headerHeight calc(#{$globalContainerSpacingLarge} - 70px);
         box-sizing: border-box;
         width: 100%;
+        position: relative;
+        top: 0;
         display: flex;
         justify-content: center;
     }
@@ -37,7 +39,7 @@
 @media screen and (max-width: 2000px) {
     .hello {
         &__container {
-            padding: 0 calc(#{$globalContainerSpacingMedium} - 70px);
+            padding: $headerHeightMedium calc(#{$globalContainerSpacingMedium} - 70px);
         }
     }
 }
@@ -45,7 +47,7 @@
 @media screen and (max-width: 1300px) {
     .hello {
         &__container {
-            padding: 0 calc(#{$globalContainerSpacingSmall} - 70px);
+            padding: $headerHeightMedium calc(#{$globalContainerSpacingSmall} - 70px);
         }
     }
 }

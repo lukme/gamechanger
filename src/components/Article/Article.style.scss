@@ -2,7 +2,7 @@
 
 .article {
     &__container {
-        padding: 0 calc(#{$globalContainerSpacingLarge} - 70px);
+        padding: $headerHeight calc(#{$globalContainerSpacingLarge} - 70px);
         box-sizing: border-box;
         width: 100%;
         display: flex;
@@ -13,7 +13,7 @@
         background-color: rgba($white, .8);
         width: 100%;
         min-height: calc(100vh - #{$headerHeight + $footerHeight});
-        padding: 5% 0 10%;
+        padding: 5% 0 5%;
         box-sizing: border-box;
     }
 }
@@ -54,7 +54,7 @@
 @media screen and (max-width: 1300px) {
     .article {
         &__container {
-            padding: 0 calc(#{$globalContainerSpacingSmall} - 70px);
+            padding: $headerHeightMedium calc(#{$globalContainerSpacingSmall} - 70px);
         }
     }
     
