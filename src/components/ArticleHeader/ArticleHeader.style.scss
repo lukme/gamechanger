@@ -23,6 +23,15 @@
         background-position: center;
         background-clip: content-box;
         background-size: cover;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            height: 10px;
+            width: 100%;
+            background-color: $violet;
+        }
     }
 
     &__textbox {
@@ -39,7 +48,7 @@
     
     &__game-title {
         font-weight: 500;
-        font-size: $fontSizeGameTitle;
+        font-size: $fontSizeNav;
         position: relative;
 
         &::before {
