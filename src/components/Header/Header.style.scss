@@ -11,7 +11,10 @@
         padding: 0 $globalContainerSpacingLarge;
         font-family: $fontFamilyHeader;
         box-sizing: border-box;
-        box-shadow: 0px 0px 42px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        z-index: 5;
     }
 
     &__logo {
@@ -34,9 +37,43 @@
         font-size: $fontSizeNav;
     }
 
-    &__link {
+    &__item {
+        width: 80px;
         margin-left: $spacingXLarge;
+    }
+    
+    &__link {
         color: $violet;
+        cursor: pointer;
+    }
+
+}
+
+.navbox {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-color: rgba($white, .95);
+    position: fixed;
+    top: $headerHeight;
+    z-index: 20;
+
+    &__header {
+        position: absolute;
+        top: 40px;
+        left: -40px;
+        transform: rotate(-90deg);
+        font-size: 3rem;
+        font-family: $fontFamilyHeader;
+        font-weight: 400;
+        color: $olive;
+    }
+
+    &__content {
+        width: 60%;
+        height: 400px;
+        background-color: red;
+        margin: 50px auto;
     }
 }
 
@@ -46,6 +83,14 @@
             padding: 0 $globalContainerSpacingMedium;
             height: $headerHeightMedium;
         }
+
+        &__navigation {
+            top: $headerHeightMedium;
+        }
+    }
+
+    .navbox {
+        top: $headerHeightMedium;
     }
 }
 
@@ -53,6 +98,12 @@
     .header {
         &__container {
             padding: 0 $globalContainerSpacingSmall;
+        }
+    }
+
+    .navbox {
+        &__content {
+            width: 75%;
         }
     }
 }
