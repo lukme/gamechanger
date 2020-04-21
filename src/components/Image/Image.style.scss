@@ -1,0 +1,29 @@
+@import '../common/settings.scss';
+
+.image {
+    width: 100%;
+    height: auto;
+
+    &__container {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        display: inline-flex;
+        margin: 10px 0;
+    }
+
+    &__tagline {
+        text-align: center;
+        background-color: rgba($white, .7);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        font-size: $fontSizeSmall;
+        p {
+            margin: 0;
+        }
+        p:nth-child(2) {
+            margin-top: -14px;
+        }
+    }
+}
