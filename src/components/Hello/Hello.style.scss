@@ -13,7 +13,7 @@
 
     &__wrapper {
         background-color: rgba($white, .8);
-        min-height: calc(100vh - #{$headerHeight + $footerHeight});
+        // min-height: calc(100vh - #{$headerHeight + $footerHeight});
         padding: 5% 70px 10%;
         box-sizing: border-box;
     }
