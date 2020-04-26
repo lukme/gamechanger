@@ -4,7 +4,7 @@
     &__container {
         width: 100%;
         height: $headerHeight;
-        background-color: #3D3D3D;
+        background-color: $olive;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -15,6 +15,11 @@
         position: fixed;
         top: 0;
         z-index: 5;
+        transition: all 200ms ease-in-out;
+    }
+
+    &--small {
+        height: calc(#{$headerHeight}  - 40px);
     }
 
     &__logo {
@@ -61,18 +66,19 @@
     &__header {
         position: absolute;
         top: 40px;
-        left: -40px;
+        left: -50px;
         transform: rotate(-90deg);
         font-size: 3rem;
         font-family: $fontFamilyHeader;
         font-weight: 400;
         color: $olive;
+        width: 180px;
     }
 
     &__content {
         width: 60%;
         height: 400px;
-        background-color: red;
+        background-color: peachpuff;
         margin: 50px auto;
     }
 }
@@ -82,6 +88,10 @@
         &__container {
             padding: 0 $globalContainerSpacingMedium;
             height: $headerHeightMedium;
+        }
+
+        &--small {
+            height: calc(#{$headerHeightMedium} - 40px);
         }
 
         &__navigation {
