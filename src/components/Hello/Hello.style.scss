@@ -5,8 +5,6 @@
         padding: $headerHeight calc(#{$globalContainerSpacingLarge} - 70px);
         box-sizing: border-box;
         width: 100%;
-        position: relative;
-        top: 0;
         display: flex;
         justify-content: center;
     }
@@ -14,7 +12,7 @@
     &__wrapper {
         background-color: rgba($white, .8);
         // min-height: calc(100vh - #{$headerHeight + $footerHeight});
-        padding: 5% 70px 10%;
+        padding: 5% 70px 0;
         box-sizing: border-box;
     }
 
